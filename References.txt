@@ -1,0 +1,3 @@
+https://www.amazon.com.br/gp/product/B016N7G8EK?&linkCode=sl1&tag=horadecodar04-20&linkId=5db831344dd409f6b603a15aed5fe229&language=pt_BR&ref_=as_li_ss_tl
+https://www.amazon.com.br/L%C3%B3gica-Programa%C3%A7%C3%A3o-Algoritmos-com-JavaScript/dp/6586057906?&linkCode=sl1&tag=horadecodar04-20&linkId=7cda7a0e27396baf94842268b3382297&language=pt_BR&ref_=as_li_ss_tl
+https://www.amazon.com.br/Fundamentos-React-bilioteca-front-end-exerc%C3%ADcios-ebook/dp/B0CMBY1HKG?crid=51U5PZUIL7RQ&keywords=matheus+battisti&qid=1699030427&s=books&sprefix=,stripbooks,201&sr=1-4&linkCode=sl1&tag=horadecodar04-20&linkId=515ecdfb5a70cc9314b7bec80c24bb27&language=pt_BR&ref_=as_li_ss_tl
