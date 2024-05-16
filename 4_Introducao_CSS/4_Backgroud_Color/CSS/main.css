@@ -1,0 +1,17 @@
+/* Adicionando uma imagem ao fundo de uma elemento */
+.bg-image {
+  background-image: url(../IMG/Sherk.jpeg);
+  padding: 40px;
+  color: #fff;
+} /*Adicionando mais de uma regra ao mesma classe*/
+.not-center-bg,
+.center-bg {
+  height: 400px;
+  width: 400px;
+  background-image: url(../IMG/Sherk.jpeg);
+}
+
+.center-bg {
+  background-position: center;
+  background-size: cover; /*Centralizar uma imagem em uma DIV*/
+}

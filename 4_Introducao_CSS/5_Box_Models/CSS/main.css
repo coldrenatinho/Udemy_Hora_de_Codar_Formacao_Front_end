@@ -1,0 +1,50 @@
+/* LARGURA E ALTURA*/
+.height-width {
+  height: 200px;
+  width: 100px;
+  background-color: #000;
+}
+.height-width-2 {
+  height: 200px;
+  /* width: 300px; */
+  background-color: rgb(255, 0, 0);
+}
+/* PADDING "PRENCHIMENTO" */
+.without-padding {
+  background-color: #ffaa00;
+  color: #fff;
+}
+
+.with-padding {
+  background-color: #004040;
+  color: #fff;
+  padding: 30px;
+}
+/*Padding individual*/
+.padding-element {
+  background-color: #000;
+  color: #fff;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+/*short-had pandding*/
+.shorthad-padding {
+  background-color: #f5555f;
+  padding: 10px 30px 60px 100px;
+}
+/*É possivel utilizar o shohgad também se aproveitando de duas dimensões para a regras*/
+.shorthad-padding-2 {
+  background-color: #f5005f;
+  padding: 10px 30px;
+}
+.div-with-borderbox {
+  background-color: #ffaa00;
+  color: #fff;
+}
+
+.div-without-borderbox {
+  background-color: #000;
+  color: #fff;
+}

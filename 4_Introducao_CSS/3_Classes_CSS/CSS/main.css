@@ -1,4 +1,29 @@
 .paragraph {
-    background-color: aqua;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 17, 255, 0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#exclusive_title_0 {
+  background-color: yellow;
+  padding: 10px;
+  color: orange;
+  opacity: 0.33;
+}
+
+/* Classe com o nome das cores */
+.color-name {
+  color: brown;
+}
+/*Cores utilizando Hexadecimal*/
+.hex {
+  color: #4ead96;
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+/*Permite controlar a opaciadade*/
+.rgba {
+  color: rgba(0, 17, 255, 0.65);
 }
