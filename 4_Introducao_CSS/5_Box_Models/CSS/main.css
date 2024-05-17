@@ -42,9 +42,15 @@
 .div-with-borderbox {
   background-color: #ffaa00;
   color: #fff;
+  width: 400px;
+  padding: 50px;
 }
 
 .div-without-borderbox {
   background-color: #000;
   color: #fff;
+  width: 400px;
+  padding: 50px;
+  /* O elemento de CSS "box-sizing"  realiza um trabalho de XXX*/
+  box-sizing: border-box;
 }
