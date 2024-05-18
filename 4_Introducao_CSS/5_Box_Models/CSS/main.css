@@ -54,3 +54,8 @@
   /* O elemento de CSS "box-sizing"  realiza um trabalho de XXX*/
   box-sizing: border-box;
 }
+
+.border {
+  border: 5px solid red;
+  padding: 10px;
+}
