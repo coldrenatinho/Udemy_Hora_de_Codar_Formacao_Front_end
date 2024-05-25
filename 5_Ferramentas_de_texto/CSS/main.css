@@ -1,0 +1,10 @@
+/*Trabalhando com alinhamento de texto*/
+.text-alingned {
+  text-align: right;
+}
+
+.container-center {
+  text-align: center;
+  width: 300px;
+  border: 5px solid blue;
+}
