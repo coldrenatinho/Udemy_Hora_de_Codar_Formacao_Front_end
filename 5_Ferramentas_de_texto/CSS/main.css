@@ -8,3 +8,17 @@
   width: 300px;
   border: 5px solid blue;
 }
+
+/*TEXT Decoration*/
+.underline {
+  text-decoration: underline;
+}
+
+.line-though {
+  text-decoration: line-through;
+}
+
+.remove-underline {
+  text-decoration: none;
+  color: red;
+}
