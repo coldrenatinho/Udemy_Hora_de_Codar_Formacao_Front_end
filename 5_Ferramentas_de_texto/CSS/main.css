@@ -33,5 +33,20 @@
 }
 
 .letter-sp {
-  letter-spacing: 10px;
+  letter-spacing: 20px;
+  font-size: 20px;
+  color: #1e14e0;
+}
+
+.serif {
+  font-family: Georgia;
+}
+.sans-serif {
+  font-family: Helvetica;
+}
+.monospace {
+  font-style: "Courier New";
+}
+.fantasy {
+  font-family: fantasy;
 }
