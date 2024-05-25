@@ -50,3 +50,37 @@
 .fantasy {
   font-family: fantasy;
 }
+.font {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.italico {
+  font-style: italic;
+  font-family: Verdana;
+  font-size: 20px;
+}
+.oblico {
+  font-style: oblique;
+  font-family: Verdana;
+  font-size: 20px;
+}
+/* font weight */
+.font-weight-thin,
+.font-weight-bold,
+.font-weight-heavi-bold {
+  font-family: Helvetica;
+}
+.font-weight-thin {
+  font-weight: 100;
+}
+.font-weight-bold {
+  font-weight: 400;
+}
+.font-weight-heavi-bold {
+  font-weight: 900;
+}
+.font-style {
+  border: 5px solid red;
+  padding: 10px 10px;
+}
