@@ -31,3 +31,7 @@
 .lower {
   text-transform: lowercase;
 }
+
+.letter-sp {
+  letter-spacing: 10px;
+}
