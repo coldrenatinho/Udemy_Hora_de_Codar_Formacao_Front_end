@@ -2,45 +2,48 @@
 
 <h1>Repositório referente ao curso disponível na Udemy: https://www.udemy.com/course/formacao-front-end-html-css-javascript-react-e/</h1>
 
-https://github.com/matheusbattisti/html_css_completo
-https://github.com/matheusbattisti/javascript_completo
-https://github.com/matheusbattisti/react_completo
-https://github.com/matheusbattisti/curso_typescript
+<ul>
+  <li>https://github.com/matheusbattisti/html_css_completo</li>
+  <li>https://github.com/matheusbattisti/javascript_completo</li>
+  <li>https://github.com/matheusbattisti/react_completo</li>
+  <li>https://github.com/matheusbattisti/curso_typescript</li>
+</ul>
 
-Repositório dos projetos:
+<h2>Repositório dos projetos:</h2>
+<ul>
+  <li>Gerador de QR Code - https://github.com/matheusbattisti/gerador_qr_code</li>
 
-Gerador de QR Code - https://github.com/matheusbattisti/gerador_qr_code
+  <li>iPhone 13 - https://github.com/matheusbattisti/iphone13_clone</li>
 
-iPhone 13 - https://github.com/matheusbattisti/iphone13_clone
+  <li>Tabuada - https://github.com/matheusbattisti/tabuada_js</li>
 
-Tabuada - https://github.com/matheusbattisti/tabuada_js
+  <li>Calculadora de IMC - https://github.com/matheusbattisti/imc_calc_js</li>
 
-Calculadora de IMC - https://github.com/matheusbattisti/imc_calc_js
+  <li>Gerador de Senhas - https://github.com/matheusbattisti/projetos_javascript/tree/main/20_gerador_de_senha</li>
 
-Gerador de Senhas - https://github.com/matheusbattisti/projetos_javascript/tree/main/20_gerador_de_senha
+  <li>Todo List Avançado - https://github.com/matheusbattisti/projetos_javascript/tree/main/19_todo_list</li>
 
-Todo List Avançado - https://github.com/matheusbattisti/projetos_javascript/tree/main/19_todo_list
+  <li>Dev Notes - https://github.com/matheusbattisti/devnotes</li>
 
-Dev Notes - https://github.com/matheusbattisti/devnotes
+  <li>Gerador de Box Shadow - https://github.com/matheusbattisti/box-shadow-generator</li>
 
-Gerador de Box Shadow - https://github.com/matheusbattisti/box-shadow-generator
+  <li>Calculadora de IMC com React - https://github.com/matheusbattisti/imc_calc_react</li>
 
-Calculadora de IMC com React - https://github.com/matheusbattisti/imc_calc_react
+  <li>Formulário Multistep React - https://github.com/matheusbattisti/react_multistep_form</li>
 
-Formulário Multistep React - https://github.com/matheusbattisti/react_multistep_form
+  <li>Formulário Multistep React e TypeScript - https://github.com/matheusbattisti/react_ts_multistep_form</li>
 
-Formulário Multistep React e TypeScript - https://github.com/matheusbattisti/react_ts_multistep_form
+  <li>Partytime - https://github.com/matheusbattisti/partytime</li>
 
-Partytime - https://github.com/matheusbattisti/partytime
+  <li>Countdown - https://github.com/matheusbattisti/countdown/tree/main</li>
 
-Countdown - https://github.com/matheusbattisti/countdown/tree/main
+  <li>Quiz React - https://github.com/matheusbattisti/quiz_react</li>
 
-Quiz React - https://github.com/matheusbattisti/quiz_react
+  <li>GitHub Finder - https://github.com/matheusbattisti/react_github_api/tree/main</li>
 
-GitHub Finder - https://github.com/matheusbattisti/react_github_api/tree/main
+  <li>Blog com React e Axios - https://github.com/matheusbattisti/react-axios/tree/main</li>
 
-Blog com React e Axios - https://github.com/matheusbattisti/react-axios/tree/main
+  <li>Memories - https://github.com/matheusbattisti/memories</li>
 
-Memories - https://github.com/matheusbattisti/memories
-
-Lazy Load - https://github.com/matheusbattisti/lazy_loadhttps://github.com/matheusbattisti/lazy_load
+  <li>Lazy Load - https://github.com/matheusbattisti/lazy_loadhttps://github.com/matheusbattisti/lazy_load</li>
+</ul>
