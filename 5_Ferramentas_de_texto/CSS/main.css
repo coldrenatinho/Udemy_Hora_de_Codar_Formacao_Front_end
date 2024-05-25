@@ -84,3 +84,10 @@
   border: 5px solid red;
   padding: 10px 10px;
 }
+/* Font size */
+.h4-small {
+  font-size: 16px;
+}
+.h4-big {
+  font-size: 120px;
+}
