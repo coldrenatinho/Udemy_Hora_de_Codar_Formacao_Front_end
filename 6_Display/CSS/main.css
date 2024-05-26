@@ -1,0 +1,25 @@
+.h1-main {
+  padding: 10px 12px;
+  background-color: rgb(169, 75, 246);
+  color: #d2ffd1;
+  font-family: Verdana;
+  text-align: center;
+}
+.in-line-box {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: blue;
+  margin: 10px;
+  border-radius: 7px;
+  display: inline-block; /*Existem elementos que sao definidos em linhas enquato outros que sao definidos em blocos*/
+}
+.block {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 7px;
+}

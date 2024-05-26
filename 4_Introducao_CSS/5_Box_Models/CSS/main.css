@@ -123,3 +123,8 @@
   width: 200px;
   height: 400px;
 }
+.block {
+  background-color: red;
+  margin: 10px;
+  padding: 100px;
+}
