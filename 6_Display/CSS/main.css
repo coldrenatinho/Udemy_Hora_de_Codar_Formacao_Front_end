@@ -23,3 +23,65 @@
   display: block;
   border-radius: 7px;
 }
+
+.hidden-element {
+  display: none; /*Esconde um elemento utilizando CSS*/
+}
+
+/*Relacao relativa de um elemento pode ser movimentado utilizando funcoes de posicao*/
+.relative {
+  position: relative;
+  color: #fff;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 100px;
+}
+.absolute {
+  position: absolute;
+  color: #fff;
+  background-color: rgb(23, 104, 150);
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 2px;
+}
+.relative-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 120px;
+  background-color: aqua;
+  position: relative;
+}
+/*Elementos que utilizam com position absolute ficam ligados ao 
+primeiro elemeto que tenha em sua composição "relative" 
+caso não exista ficaram ligados ao "BODY"*/
+.absolute-1,
+.absolute-2 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(169, 75, 246);
+  position: absolute;
+}
+.absolute-1 {
+  top: 10px;
+  right: 10px;
+}
+.absolute-2 {
+  background-color: rgb(255, 0, 0);
+  bottom: 10px;
+  right: 10px;
+}
+.fixed {
+  background-color: burlywood;
+  width: 400px;
+  height: 240px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 40px;
+  position: fixed;
+  top: 10px;
+}
