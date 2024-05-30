@@ -85,3 +85,42 @@ caso não exista ficaram ligados ao "BODY"*/
   position: fixed;
   top: 10px;
 }
+.sticky {
+  width: 120px;
+  height: 260px;
+  background-color: black;
+  color: #fff;
+  top: 120px;
+  left: 2px;
+  position: sticky;
+}
+
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(69, 75, 246);
+  position: absolute;
+}
+
+.absolute-3 {
+  top: 0px;
+  left: 0px;
+  background-color: rgb(50, 158, 66);
+  /* o z index controla a profundiade dos elementos da tela  */
+  z-index: 3;
+}
+.absolute-4 {
+  top: 10px;
+  left: 10px;
+  background-color: #ff6c6c;
+  z-index: 2;
+}
+
+.absolute-5 {
+  top: 20px;
+  left: 20px;
+  background-color: rgb(234, 147, 8);
+  z-index: 1;
+}
