@@ -15,11 +15,3 @@
   background-position: center;
   background-size: cover; /*Centralizar uma imagem em uma DIV*/
 }
-
-.header {
-  background-color: bisque;
-}
-
-figcaption {
-  font-family: sans-serif;
-}
