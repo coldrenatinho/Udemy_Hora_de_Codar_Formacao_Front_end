@@ -21,3 +21,7 @@ input {
 .radio span{
     display: inline-block;
 }
+
+.checkbox{
+    display: inline-block;
+}
