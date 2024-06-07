@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Formularios</title>
+</head>
+<body>
+   <div>
+    <form action="">
+            <label for="car_model">Escolha seu modelo de carro</label>
+            <div class="radio">
+                <input type="radio" id="bmw" name="car_model" value="bmw">
+                <label for="bmw">BMW</label>
+             </div>
+            <div class="radio">
+                <input type="radio" id="Ferrari" name="car_model" value="bmw">
+                <label for="bmw">Ferrario</label>
+             </div>
+            <div class="radio">
+                <input type="radio" id="Masserati" name="car_model" value="bmw">
+                <label for="bmw">Masserati</label>
+             </div>
+             <div>
+                <label for="optionals">Opcoes do carro</label>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]"  value="ar_condicionado">
+                    <label for="ar_condicionado">ar condicionado</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]"  value="ar_condicionado">
+                    <label for="ar_condicionado">ar condicionado</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" name="optionals[]"  value="ar_condicionado">
+                    <label for="ar_condicionado">ar condicionado</label>
+                </div>
+             </div>
+             <div>
+                <label for="brithday">Aniversario</label>
+                <input type="date" name="brithday">
+             </div>
+             <!-- Arquivos   -->
+              <div>
+                <label for="imgage">Insira a sua imagem</label>
+                <input type="file" name="imagem" id="">
+              </div>
+              <!-- Numeros -->
+               <div>
+                <label for="phone">phone</label>
+                <input type="number" name="phone" id="">
+               </div>
+                <!-- Email -->
+                 <div>
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="">
+                 </div>
+                 <div>
+                    <h4>Mude o valor</h4>
+                    <input type="text" disabled>
+                 </div>
+                 <!-- placeholder -->
+                  <div>
+                    <label for="curret job">Digite seu emprego atual</label>
+                    <input type="text" name="curret job" id="" placeholder="Digite seu local de trabalho atual">
+                  </div>
+                  <!-- Require -->
+                   <div>
+                    <label for="cpf"></label> 
+                    <input type="text" placeholder="Digite o seu CPF" required>
+                   </div>
+
+    </form>
+   </div> 
+</body>
+</html>
