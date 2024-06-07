@@ -6,3 +6,5 @@
 /.opt
 /img/*
 
+*.zip
+*.tar

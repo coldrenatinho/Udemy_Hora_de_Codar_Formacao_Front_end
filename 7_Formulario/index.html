@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Renato A. Silva" />
+    <title>Introdução a formularios</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <h1>Formularios HTML</h1>
+    <!-- 1 Primeiro formulario -->
+    <!-- 2 Atributos dos formularios -->
+    <form action="register.php" method="post">
+      <div>
+        <label>Nome</label>
+        <input type="text" />
+      </div>
+      <!-- 3 Atributo name  -->
+      <div>
+        <!-- 4 Atributo label -->
+        <label for="age">idade</label>
+        <input type="text" , name="age" />
+      </div>
+      <!-- Selec  -->
+      <div>
+        <label for="job">Selecione a sua profissao</label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="QA">QA</option>
+          <option value="Badeco">Badeco</option>
+        </select>
+      </div>
+      <div>
+        <label for="form">Aceite</label>
+        <select name="form">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+          <!--  Utilizando a tag selected podemos colocar uma opcao pre selecionado ao formulario-->
+        </select>
+      </div>
+      <div>
+        <label for="job">Selecione a sua profissao</label>
+        <select name="job" multiple>
+          <!-- selecao com multiplas-->
+          <option value="programador">Programador</option>
+          <option value="QA">QA</option>
+          <option value="Badeco">Badeco</option>
+        </select>
+      </div>
+      <div>
+        <label for="commet">Comentario</label>
+        <textarea name="commet"></textarea>
+      </div>
+      <!-- fildset e legend -->
+      <div>
+        <!-- A tag filder serve para agrupar dados de um formulario e legend nomea esse espaço  -->
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <label for="fistname">Nome</label>
+          <input type="text" name="fistname" />
+          <label for="Addres">Endereço</label>
+          <input type="text" name="Addres" />
+          <label for="number">Numero</label>
+          <input type="number" name="number" id="" />
+        </fieldset>
+      </div>
+      <div>
+        <label for="flavor">Escolha um sabor</label>
+        <input type="text" list="flavors" name="flavor" />
+        <datalist id="flavors">
+          <option value="Cereja"></option>
+          <option value="Morango"></option>
+          <option value="Chocolate"></option>
+        </datalist>
+      </div>
+      <!-- Senhas -->
+      <div>
+        <label for="password">Digite a sua senha</label>
+        <input type="password" name="password" id="" />
+      </div>
+      <!-- Resetar formulario -->
+      <div>
+        <input type="reset" value="resetar" name="restar" id="" />
+      </div>
+      <div>
+        <!-- Envio de form -->
+        <input type="submit" value="enviar" />
+      </div>
+    </form>
+  </body>
+</html>
