@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/action.css".css">
     <title>Venda de Veiculos Sinop</title>
 </head>
 <body>
+    <div>
+    <form action=""></form>
     <div class="container">
         <div class="header">
-            <h2>Cadastre seu veiculo para vender mais rapido!!!</h2>
+            <h3>Cadastre seu veiculo para vender mais rapido!!!</h3>
+            <p id="texto"></p>
         </div>
         <div class="form-container">
             <div class="from-header">
@@ -20,10 +24,36 @@
                 <p>Descreva as caracteristicas do seu carro e marque quais os opcionais ele contem</p>
             </div>
             <div class="box-input">
-                <label for="title">Titulo do anuncio <span class="require-fild">#</span></label>
+                <label for="title">Titulo do anuncio <span class="require-fild">*</span></label>
             <input type="text" name="title" class="block" id="" placeholder="Um titulo para o anuncio" minlength="1" maxlength="50" required>
             </div>
+            <div class="box-input">
+                <label for="price">Defina o valor do veiculo<span class="require-fild">*</span></label>
+            <input type="number" name="price" class="block" id="" placeholder="Valor a ser anunciado" required>
+            </div>
+            <div class="box-input">
+                <label for="description">Descricao <span class="require">*</span></label>
+                <textarea name="description" id="" class="block" placeholder="Descreva as informacoes do seu veiculo" required></textarea>
+            </div>
+            <div class="box-input">
+                <label for="brand">Nome da marca<span class="require-fild">*</span></label>
+            <input type="text" name="brand" class="block" id="" placeholder="Nome da marcar" minlength="1" maxlength="50" required>
+            </div>
+            <div class="box-input">
+                <label for="Kilometer">Kilometragem<span class="require-fild">*</span></label>
+            <input type="number" name="Kilometer" class="block" id="" placeholder="Kilometragem" minlength="1" maxlength="50" required>
+            <div class="box-input">
+                <label for="Kilometer">Kilometragem<span class="require-fild">*</span></label>
+            <input type="number" name="Kilometer" class="block" id="" placeholder="Kilometragem" minlength="1" maxlength="50" required>
+            <div class="box-input">
+                <label for="buy-date">Kilometragem<span class="require-fild">*</span></label>
+            <input type="date" name="buy-date" class="block" id="">
+        <div class="action">
+            <input type="submit" name="submit" value="Enviar formulario" id="">
+            <input type="reset" name="reset" value="limpar formulario" id="">
         </div>
     </div>
+    </div>
+    <script src="JS/main.js"></script>
 </body>
 </html>
