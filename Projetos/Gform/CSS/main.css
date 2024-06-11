@@ -1,71 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 input {
-    display: inline-block;
-    border: none;
-    border-bottom: #a5d2ff solid 5px;
-    padding: 10px 0px;
-    margin: 5px;
-    width: 145px;
-    font-family: sans-serif;
-    border-radius: 3px;
+  display: inline-block;
+  border: none;
+  border-bottom: #a5d2ff solid 5px;
+  padding: 10px 0px;
+  margin: 5px;
+  width: 145px;
+  font-family: sans-serif;
+  border-radius: 3px;
 }
 
-h1, h2, h3, h4, h5{
-    color: #1a0a00;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-body{
-    background-color: #cce2f6;
-
-}
-
-p, label{
-    color: #333;
-    font-family: sans-serif
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #1a0a00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
- text-align: center;
+  background-color: #cce2f6;
+  text-align: center;
+}
+
+p,
+label {
+  color: #333;
+  font-family: sans-serif;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="date"],
-input[type="file"]{
-    width: 400px;
-    border-bottom: #00999e solid 5px;
-    padding-left: 10px;
+input[type="file"] {
+  width: 40%;
+  margin: none;
+  border-bottom: #00999e solid 5px;
+  padding-left: 10px;
 }
 
-.header{
-    background-color: #2a6cb8;
-    block-size: auto;
-    height: 300px;
+.header {
+  background-color: #2a6cb8;
+  block-size: auto;
+  height: 300px;
 }
 
-.header h3{
-    color: #FFF;
-    margin-top: 0;
-    font-weight: 100;
-    font-size: 40px;
+.header h3 {
+  color: #fff;
+  padding-top: 40px;
+  font-weight: 100;
+  font-size: 40px;
 }
 
-.form-container{
-    background-color:#f4faff;
-    width: 60%;
-    margin: 0 auto;
-    border-radius: 10px;
-    position: relative;
-    min-height: 300px;
-    max-height: 800px;
-    top: -63px;
+.form-container {
+  background-color: #f4faff;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  min-height: 300px;
+  top: -63px;
 }
 
-textarear{
-    padding: 10px 5px;
+textarear {
+  padding: 10px 5px;
+}
+div input {
+  margin: 10px 0px;
 }
