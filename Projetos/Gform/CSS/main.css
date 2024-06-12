@@ -34,6 +34,11 @@ label {
   font-family: sans-serif;
 }
 
+label {
+  display: block;
+  text-align: left;
+}
+
 input[type="text"],
 input[type="number"],
 input[type="date"],
@@ -65,11 +70,71 @@ input[type="file"] {
   position: relative;
   min-height: 300px;
   top: -63px;
+  padding: 30px;
 }
 
 textarear {
   padding: 10px 5px;
 }
+
 div input {
   margin: 10px 0px;
+}
+
+.form-header {
+  border-bottom: 1px solid #2a6cb8;
+  height: 45px;
+}
+
+.form-header p {
+  color: #2a6cb8;
+  border-bottom: 2px solid #2a6cb8;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  height: 45px;
+  line-height: 45px;
+}
+.form-body {
+  padding: 20px;
+}
+
+.form-body p {
+  margin-bottom: 20px;
+}
+
+.require-fild {
+  color: #dd5e5e;
+  padding: none;
+}
+
+.box-input {
+  margin-bottom: 35px;
+}
+
+.block {
+  display: block;
+}
+
+.optional-block {
+  display: inline-block;
+  margin: 0px 0px;
+}
+.radio-input div,
+.radio-input label,
+.radio-input input {
+  display: inline-block;
+  width: auto;
+}
+
+.radio-input div {
+  margin: 10px;
+}
+
+.radio-input p {
+  margin-top: 90px;
+  height: 40px;
+  line-height: 40px;
+  font-size: large;
 }
