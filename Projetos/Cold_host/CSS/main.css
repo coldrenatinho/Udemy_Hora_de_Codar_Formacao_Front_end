@@ -3,8 +3,16 @@
   padding: 0;
   font-family: Helvetica;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  transform: 300ms;
 }
-
+section {
+  display: block;
+}
+input {
+  text-align: center;
+  margin: 0 auto;
+}
 h1,
 h2,
 h3 {
@@ -18,7 +26,7 @@ p {
 .navbar-container {
   width: 100%;
   height: 80px;
-  background-color: rgb(2, 21, 8);
+  background-color: #021508;
   padding: 0px 2rem;
 }
 
@@ -106,6 +114,7 @@ nav {
   display: flex;
   width: 90%;
   margin: 0 auto;
+  height: 400px;
 }
 
 .services-container li {
@@ -152,7 +161,6 @@ nav {
 
 .plan {
   flex: 1;
-  max-width: 245px;
   margin: 20px 0;
 }
 
@@ -242,4 +250,169 @@ nav {
   padding: 20px;
   margin-bottom: 25px;
   font-size: 20px;
+}
+
+.search-domain-container input[type="submit"] {
+  background-color: #2cc76a;
+  color: #fff;
+  padding: 30px 60px;
+  font-size: 24;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 300ms;
+}
+
+.search-domain-container :hover input[type="submit"] {
+  background-color: #2cc76a;
+  color: #fff;
+  padding: 30px 60px;
+  font-size: 24;
+  cursor: pointer;
+  opacity: 1;
+}
+/* contact form */
+.contact-container {
+  text-align: center;
+  padding: 5rem 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-container h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.contact-container p {
+  margin-top: 15px;
+}
+fieldset {
+  border: 0;
+  box-shadow: none;
+}
+
+.contact-container input,
+.contact-container textarea {
+  font-size: 16px;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 5px;
+  border: solid #060111 1px;
+  margin-top: 1rem;
+}
+
+.contact-container textarea {
+  display: block;
+  margin: 15px auto;
+  width: 640px;
+  height: 150px;
+  box-shadow: inset 5px 5px 10px hsla(0, 2%, 32%, 0.097);
+  resize: none;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.contact-container input[type="submit"] {
+  cursor: pointer;
+  color: #fff;
+  margin: 0 auto;
+  background-color: #2cc76a;
+  border: none;
+  transition: 300ms;
+}
+.contact-container :hover input[type="submit"] {
+  cursor: pointer;
+  color: #fff;
+  margin: 0 auto;
+  background-color: #0c621d;
+  border: none;
+}
+
+/* footer */
+footer {
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  background-color: #021508;
+}
+
+footer p {
+  color: #333;
+}
+
+/* responsitividade */
+/* small laptops */
+@media (max-width: 1100px) {
+  .plans-container {
+    width: 95%;
+  }
+  .plan {
+    margin: 0px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-banner p {
+    padding: 0 6rem;
+  }
+
+  .contact-container p {
+    padding: 0 6rem;
+  }
+}
+
+/* celular */
+@media (max-width: 600px) {
+  .plans-container {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+  }
+  .services-container ul {
+    flex-direction: column;
+  }
+  .contact-container {
+    padding: 2rem 3rem;
+  }
+
+  .search-domain-container h2,
+  .search-domain-container p {
+    padding: 2rem;
+  }
+
+  .navbar-container {
+    font-size: 10px;
+    height: 8rem;
+  }
+
+  .defaul-btn {
+    padding: 1rem 2rem;
+    font-size: 12px;
+  }
+  .div-btn {
+    display: block;
+    width: 100%;
+  }
+
+  .services-container li {
+    flex: 100%;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+  }
+  .pricing-container {
+    margin-top: 30rem;
+  }
+  .search-domain-container input {
+    width: 80%;
+  }
 }

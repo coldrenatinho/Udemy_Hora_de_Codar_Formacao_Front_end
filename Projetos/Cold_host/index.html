@@ -19,23 +19,29 @@
     <div class="container">
       <div class="navbar-container">
         <nav>
-          <a href="#">
-            <img class="logotipo" src="IMG/hdchostlogo.png" alt="hdc logo" />
-          </a>
-          <ul class="navbar-items">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Preços</a>
-            </li>
-            <li>
-              <a href="#">Contato</a>
-            </li>
-            <li>
-              <a href="#" class="defaul-btn">Entrar</a>
-            </li>
-          </ul>
+          <div style="display: inline">
+            <a href="#">
+              <img class="logotipo" src="IMG/hdchostlogo.png" alt="hdc logo" />
+            </a>
+          </div>
+          <div style="display: inline">
+            <ul class="navbar-items">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Preços</a>
+              </li>
+              <li>
+                <a href="#">Contato</a>
+              </li>
+              <li>
+                <div class="div-btn">
+                  <a href="#" class="defaul-btn">Entrar</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <main>
@@ -152,7 +158,29 @@
             />
           </form>
         </section>
+        <section class="contact-container">
+          <h2>
+            Envie a sua mensagem, em até 4 horas um especialista entrará em
+            contato
+          </h2>
+          <form action="">
+            <fieldset>
+              <input type="text" name="name" id="name" placeholder="Seu nome" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="e-mail "
+              />
+              <textarea name="user_input" id="user_input"> </textarea>
+            </fieldset>
+            <input type="submit" value="Entrar em contato" id="submit" />
+          </form>
+        </section>
       </main>
+      <footer>
+        <p>Cold host @ 2024</p>
+      </footer>
     </div>
   </body>
 </html>
