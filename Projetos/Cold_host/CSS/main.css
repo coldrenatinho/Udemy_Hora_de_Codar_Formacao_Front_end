@@ -191,3 +191,55 @@ nav {
   background-color: #022709;
   padding: 50px 0;
 }
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #202b34;
+  padding: 50px 0;
+}
+
+.plan .plan-btn {
+  background-color: #1d7027;
+  color: #fff;
+  height: 75px;
+  font-size: 24px;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+/* serach domain */
+.search-domain-container {
+  background-color: #022709;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.search-domain-container h2 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.search-domain-container p {
+  color: #d5d5d5;
+  font-size: 21px;
+  margin-bottom: 25px;
+  color: #cfcfcf;
+}
+
+.search-domain-container input {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.search-domain-container input[type="text"] {
+  width: 60%;
+  padding: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
