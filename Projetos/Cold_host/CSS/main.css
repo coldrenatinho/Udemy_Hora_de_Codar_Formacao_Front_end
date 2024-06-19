@@ -128,3 +128,66 @@ nav {
 .fa-comments {
   color: rgb(58, 200, 162);
 }
+
+/* Price and plans */
+.pricing-container {
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 32px;
+}
+
+.pricing-container p {
+  font-size: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.plan {
+  flex: 1;
+  max-width: 245px;
+  margin: 20px 0;
+}
+
+.plan ul {
+  padding: none;
+  border: 5px transparent;
+}
+
+.plan li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  background-color: #cfcfcf;
+  color: #333;
+}
+
+.plan .price {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #1d7027;
+  color: #fff;
+  text-align: center;
+  line-height: 120px;
+  margin: 0 auto;
+  font-size: 18px;
+  position: relative;
+  top: 60px;
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-weight: 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #022709;
+  padding: 50px 0;
+}
