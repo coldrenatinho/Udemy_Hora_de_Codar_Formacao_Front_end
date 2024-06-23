@@ -1,49 +1,27 @@
-#Udemy_Hora_de_Codar_Formacao_Front_end
+# Formação Front-end - Hora de Codar (Udemy)
 
-<h1>Repositório referente ao curso disponível na Udemy: https://www.udemy.com/course/formacao-front-end-html-css-javascript-react-e/</h1>
+Este repositório é dedicado à Formação Front-end disponível na [Udemy](https://www.udemy.com/course/formacao-front-end-html-css-javascript-react-e/), ministrada por Matheus Battisti.
 
-<ul>
-  <li>https://github.com/matheusbattisti/html_css_completo</li>
-  <li>https://github.com/matheusbattisti/javascript_completo</li>
-  <li>https://github.com/matheusbattisti/react_completo</li>
-  <li>https://github.com/matheusbattisti/curso_typescript</li>
-</ul>
+## Cursos Individuais
 
-<h2>Repositório dos projetos:</h2>
-<ul>
-  <li>Gerador de QR Code - https://github.com/matheusbattisti/gerador_qr_code</li>
+A formação inclui os seguintes cursos, cada um com seu próprio repositório:
 
-  <li>iPhone 13 - https://github.com/matheusbattisti/iphone13_clone</li>
+- [HTML e CSS Completo](https://github.com/matheusbattisti/html_css_completo)
+- [JavaScript Completo](https://github.com/matheusbattisti/javascript_completo)
+- [React Completo](https://github.com/matheusbattisti/react_completo)
+- [Curso de TypeScript](https://github.com/matheusbattisti/curso_typescript)
 
-  <li>Tabuada - https://github.com/matheusbattisti/tabuada_js</li>
+## Projetos Práticos
 
-  <li>Calculadora de IMC - https://github.com/matheusbattisti/imc_calc_js</li>
+Durante a formação, são desenvolvidos diversos projetos práticos, incluindo:
 
-  <li>Gerador de Senhas - https://github.com/matheusbattisti/projetos_javascript/tree/main/20_gerador_de_senha</li>
+- [Gerador de QR Code](https://github.com/matheusbattisti/gerador_qr_code)
+- [Clone do iPhone 13](https://github.com/matheusbattisti/iphone13_clone)
+- [Tabuada](https://github.com/matheusbattisti/tabuada_js)
+- [Calculadora de IMC](https://github.com/matheusbattisti/imc_calc_js)
 
-  <li>Todo List Avançado - https://github.com/matheusbattisti/projetos_javascript/tree/main/19_todo_list</li>
+## Sobre o Instrutor
 
-  <li>Dev Notes - https://github.com/matheusbattisti/devnotes</li>
+Matheus Battisti é um desenvolvedor experiente e instrutor na Udemy, especializado em front-end e tecnologias web modernas.
 
-  <li>Gerador de Box Shadow - https://github.com/matheusbattisti/box-shadow-generator</li>
-
-  <li>Calculadora de IMC com React - https://github.com/matheusbattisti/imc_calc_react</li>
-
-  <li>Formulário Multistep React - https://github.com/matheusbattisti/react_multistep_form</li>
-
-  <li>Formulário Multistep React e TypeScript - https://github.com/matheusbattisti/react_ts_multistep_form</li>
-
-  <li>Partytime - https://github.com/matheusbattisti/partytime</li>
-
-  <li>Countdown - https://github.com/matheusbattisti/countdown/tree/main</li>
-
-  <li>Quiz React - https://github.com/matheusbattisti/quiz_react</li>
-
-  <li>GitHub Finder - https://github.com/matheusbattisti/react_github_api/tree/main</li>
-
-  <li>Blog com React e Axios - https://github.com/matheusbattisti/react-axios/tree/main</li>
-
-  <li>Memories - https://github.com/matheusbattisti/memories</li>
-
-  <li>Lazy Load - https://github.com/matheusbattisti/lazy_loadhttps://github.com/matheusbattisti/lazy_load</li>
-</ul>
+Para mais informações e cursos, visite o [perfil de Matheus Battisti na Udemy](https://www.udemy.com/user/matheus-battisti/).
