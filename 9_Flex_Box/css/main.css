@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flexbox {
+  display: flex;
+  padding: 5px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.flex-coloumn {
+  display: flex;
+  padding: 5px;
+  background-color: #ddd;
+  flex-direction: column;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  height: 40px;
+  border: 1px solid #000;
+  width: 33%;
+}
+
+.center {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.center .item,
+.space-around .item,
+.center .item,
+.space-between .item,
+.end .item {
+  width: 50px;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* aling items */
+.aling-center,
+.aling-end,
+.aling-stretch {
+  display: flex;
+  margin-bottom: 20px;
+  height: 200px;
+  border: solid blue 1px;
+}
+.aling-stretch .item,
+.aling-center .item,
+.aling-end .item,
+.aling-stretch .item {
+  width: 50px;
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.aling-end {
+  align-items: flex-end;
+}
+
+.aling-stretch {
+  align-items: stretch;
+}
+
+.aling-stretch .item {
+  height: 100%;
+}
