@@ -233,3 +233,133 @@ footer {
   font-size: 12px;
   color: #999;
 }
+
+@media (max-width: 400px) {
+  body {
+    background-color: #fff;
+  }
+
+  #form-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color: #fff;
+  }
+
+  #banner-container {
+    display: none;
+  }
+
+  #form-container {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #main-container,
+  #form-container {
+    margin-top: 0;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+
+  #footer-links {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 100;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #login-form input[type="submit"] {
+    height: 40px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  #banner-container {
+    display: none;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    font-weight: 100;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #form-container,
+  #form-box,
+  #register-container,
+  #get-app {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #get-app img {
+    max-width: 200px;
+  }
+
+  #register-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+
+  body {
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 853px) {
+  #banner-container img {
+    max-width: 300px;
+  }
+
+  body {
+    background-color: #fafafa;
+  }
+
+  #get-app {
+    display: block;
+  }
+
+  #footer-links {
+    justify-content: space-around;
+    flex-basis: 45%;
+    gap: 10px;
+    flex-direction: column;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #banner-container img {
+    max-width: 300px;
+  }
+
+  body {
+    background-color: #fafafa;
+    margin-bottom: 400px;
+  }
+
+  #get-app {
+    display: block;
+  }
+}
