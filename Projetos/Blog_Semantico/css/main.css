@@ -19,6 +19,20 @@ a:hover {
   color: rgb(97, 124, 206);
 }
 
+fieldset {
+  border: none;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.209);
+}
+
+section {
+  margin-top: 2rem;
+}
+
+/* Header */
 #navbar {
   padding: 1.5rem 2.5rem;
   border-bottom: 2px solid #ddd;
@@ -63,7 +77,6 @@ a:hover {
 .title,
 .description,
 .author {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -71,8 +84,146 @@ a:hover {
   font-size: 2.5rem;
 }
 
+.description {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.description {
+  text-align: justify;
+}
+
 .author {
   font-size: 1rem;
   color: #777;
   font-weight: bold;
+}
+
+#side-bar {
+  flex: 1 1 0;
+}
+
+.sidebar-box {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#serch-bar,
+#categories,
+#tags {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#serch-bar h4,
+#categories h4,
+#tags h4 {
+  margin-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+#serch-bar form {
+  display: flex;
+}
+
+#serch-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+#serch-bar input[type="submit"] {
+  background-color: rgb(97, 124, 206);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  left: -1px;
+}
+
+#serch-bar input[type="submit"]:hover {
+  background-color: rgb(77, 104, 186);
+  left: -1px;
+}
+
+#serch-bar input[type="text"] {
+  flex: 1;
+}
+#serch-bar input[type="text"]:focus {
+  outline: none;
+}
+
+#categories li {
+  margin-bottom: 1rem;
+}
+
+#tags-container {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+#tags-container a {
+  background-color: rgb(97, 124, 206);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#tags-container a:hover {
+  background-color: rgb(77, 104, 186);
+}
+
+#footer {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 1rem 2.5rem;
+  border-top: 2px solid #ddd;
+  text-align: center;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #side-bar {
+    order: 2;
+  }
+
+  #post-container {
+    order: 1;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  #tags-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
