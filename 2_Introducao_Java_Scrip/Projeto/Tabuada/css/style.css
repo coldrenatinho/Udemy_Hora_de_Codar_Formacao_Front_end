@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-top: 60px;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #35a4e9, #b6eef3);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+#multiplication-form,
+#multiplication-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #0b0101;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+#multiplication-form input[type="submit"] {
+  display: block;
+  flex-wrap: nowrap;
+  flex-basis: 80%;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background-color: #35a4e9;
+  border: 1px solid #35a4e9;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #1b91dba3;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#multiplication-table {
+  flex-direction: column;
+}
+
+#mutiplication-operator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#mutiplication-operator p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+}
+
+#mutiplication-operator .row {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 1px solid #9a8585;
+  padding: 0.5rem;
+  width: 150px;
+  justify-content: space-around;
+}
