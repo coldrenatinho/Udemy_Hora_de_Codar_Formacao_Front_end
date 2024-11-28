@@ -31,6 +31,18 @@ h2 {
   gap: 1rem;
 }
 
+#multiplication-form .form-item {
+  flex: 1 1 calc(10% - 1rem); /* Cada item ocupa aproximadamente 10% da largura */
+  max-width: calc(10% - 1rem); /* Limita a largura máxima de cada item */
+  margin: 0.5rem;
+}
+
+#multiplication-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  flex: 1 1 100%; /* O botão de submit ocupa toda a linha */
+}
+
 #multiplication-form input[type="submit"] {
   display: block;
   flex-wrap: nowrap;
@@ -76,7 +88,6 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
 }
 
 #mutiplication-operator p {
@@ -92,4 +103,54 @@ h2 {
   padding: 0.5rem;
   width: 150px;
   justify-content: space-around;
+}
+
+#multiplication-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 70%;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  color: #0b0101;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+#multiplication-form .form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+}
+
+#multiplication-form .form-item label {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#multiplication-form .form-item input {
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+#multiplication-form input[type="submit"] {
+  display: block;
+  flex-wrap: nowrap;
+  flex-basis: 80%;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  background-color: #35a4e9;
+  border: 1px solid #35a4e9;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #1b91dba3;
+  color: #fff;
+  font-weight: bold;
 }
