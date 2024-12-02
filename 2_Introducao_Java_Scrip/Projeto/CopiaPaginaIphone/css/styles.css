@@ -194,3 +194,31 @@ header nav {
 .selected {
   outline: 2px solid #0071e3;
 }
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  #nav-bar li {
+    display: none;
+  }
+
+  #nav-bar #logo {
+    display: flex;
+  }
+
+  #bottom-header-links a {
+    display: none;
+  }
+
+  #bottom-header-links .btn {
+    display: flex;
+  }
+
+  #main-content {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  #main-content #subtitle {
+    font-size: 2.5rem;
+  }
+}
