@@ -1,6 +1,457 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e70000;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  /* 🌈 GRADIENTE ANIMADO MALUCO */
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #96ceb4,
+    #feca57,
+    #ff9ff3,
+    #54a0ff,
+    #5f27cd
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* 🎨 ANIMAÇÃO DO GRADIENTE PRINCIPAL */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  /* 🌟 GRADIENTE ANIMADO DO CONTAINER */
+  background: linear-gradient(
+    90deg,
+    rgba(7, 1, 95, 0.9),
+    rgba(29, 187, 174, 0.9),
+    rgba(255, 107, 107, 0.8),
+    rgba(84, 160, 255, 0.9)
+  );
+  background-size: 300% 300%;
+  animation: containerGradient 6s ease-in-out infinite;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🎭 ANIMAÇÃO DO CONTAINER */
+@keyframes containerGradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  33% {
+    background-position: 100% 0%;
+  }
+  66% {
+    background-position: 50% 100%;
+  }
+}
+
+/* 🌊 PSEUDO-ELEMENTO COM GRADIENTE EXTRA */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 0, 150, 0.1),
+    transparent,
+    rgba(0, 255, 255, 0.1),
+    transparent,
+    rgba(255, 255, 0, 0.1)
+  );
+  background-size: 200% 200%;
+  animation: overlayFlow 4s ease-in-out infinite;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+@keyframes overlayFlow {
+  0%,
+  100% {
+    background-position: 0% 0%;
+    opacity: 0.3;
+  }
+  50% {
+    background-position: 100% 100%;
+    opacity: 0.7;
+  }
+}
+
+/* 🔥 GRADIENTE REATIVO QUANDO EM FOCO */
+.calc-container:focus-within .container::before {
+  animation: overlayFlow 1s ease-in-out infinite, focusIntensify 2s ease infinite;
+}
+
+@keyframes focusIntensify {
+  0%,
+  100% {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 150, 0.2),
+      rgba(0, 255, 255, 0.2),
+      rgba(255, 255, 0, 0.2)
+    );
+  }
+  50% {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 150, 0.6),
+      rgba(0, 255, 255, 0.6),
+      rgba(255, 255, 0, 0.6)
+    );
+  }
+}
+
+/* 🌈 GRADIENTE DE FUNDO MAIS INTENSO QUANDO FOCADO */
+body:has(.calc-container:focus-within) {
+  animation: gradientShift 3s ease infinite, intensePulse 1.5s ease infinite;
+}
+
+@keyframes intensePulse {
+  0%,
+  100% {
+    background-size: 400% 400%;
+  }
+  50% {
+    background-size: 600% 600%;
+  }
+}
+
+/* ✨ GARANTE QUE O CONTEÚDO FIQUE POR CIMA */
+.calc-container {
+  position: relative;
+  z-index: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+.calc-container {
+  transform: font-size 0.3s ease;
+}
+.calc-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  transition: font-size 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    color 0.6s ease, transform 0.7s ease, text-shadow 0.5s ease,
+    letter-spacing 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.form-container {
+  position: relative;
+  margin-bottom: 4rem; /* Aumentado para dar espaço ao label */
+  padding-bottom: 2rem; /* Espaço extra na parte inferior */
+}
+.form__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  top: 1.5rem; /* Ajustado para alinhar com o padding do input */
+  left: 2rem;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transform-origin: left top;
+}
+
+/* ✅ LABEL SE MOVE PARA BAIXO QUANDO FOCADO */
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(3rem) scale(0.8); /* Move para BAIXO */
+  color: #007bff;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 2px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 🎯 EFEITO ESPECIAL: LABEL COM SHAKE QUANDO ATIVO */
+.form__input:focus + .form__label {
+  animation: labelShake 0.5s ease-in-out infinite;
+}
+
+@keyframes labelShake {
+  0%,
+  100% {
+    transform: translateY(3rem) scale(0.8) rotate(0deg);
+  }
+  25% {
+    transform: translateY(3rem) scale(0.8) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(3rem) scale(0.8) rotate(1deg);
+  }
+}
+
+/* 💫 EFEITO BÔNUS: LABEL PULSA QUANDO TEM CONTEÚDO */
+.form__input:not(:placeholder-shown) + .form__label {
+  animation: labelPulse 1s ease-in-out infinite;
+}
+
+@keyframes labelPulse {
+  0%,
+  100% {
+    transform: translateY(3rem) scale(0.8);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+  }
+  50% {
+    transform: translateY(3rem) scale(0.85);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.6);
+  }
+}
+
+.form__input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 🔥 SHAKE QUANDO EM FOCO */
+.form__input:focus {
+  border-bottom: 0.3rem solid #007bff;
+  outline: none;
+  animation: inputShake 0.6s ease-in-out infinite; /* ✅ SHAKE INFINITO */
+  transform-origin: center;
+}
+
+/* 🌪️ ANIMAÇÃO DE SHAKE MALUCA */
+@keyframes inputShake {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateX(-2px) rotate(-0.5deg) scale(1.02);
+  }
+  20% {
+    transform: translateX(2px) rotate(0.5deg) scale(0.98);
+  }
+  30% {
+    transform: translateX(-3px) rotate(-0.8deg) scale(1.03);
+  }
+  40% {
+    transform: translateX(3px) rotate(0.8deg) scale(0.97);
+  }
+  50% {
+    transform: translateX(-2px) rotate(-0.3deg) scale(1.01);
+  }
+  60% {
+    transform: translateX(2px) rotate(0.3deg) scale(0.99);
+  }
+  70% {
+    transform: translateX(-1px) rotate(-0.2deg) scale(1.005);
+  }
+  80% {
+    transform: translateX(1px) rotate(0.2deg) scale(0.995);
+  }
+  90% {
+    transform: translateX(-0.5px) rotate(-0.1deg) scale(1.001);
+  }
+}
+
+/* 🎯 SHAKE MAIS INTENSO QUANDO TEM CONTEÚDO */
+.form__input:not(:placeholder-shown) {
+  animation: inputVibrateIntense 0.4s ease-in-out infinite;
+}
+
+@keyframes inputVibrateIntense {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  25% {
+    transform: translateX(-1px) translateY(1px) rotate(0.5deg);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+  50% {
+    transform: translateX(1px) translateY(-1px) rotate(-0.3deg);
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+  }
+  75% {
+    transform: translateX(-0.5px) translateY(0.5px) rotate(0.2deg);
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.6);
+  }
+}
+
+/* 💥 EFEITO ESPECIAL: QUANDO AMBOS OS INPUTS ESTÃO FOCADOS */
+.form-container:focus-within + .form-container .form__input {
+  animation: sympatheticShake 0.3s ease-in-out infinite;
+}
+
+@keyframes sympatheticShake {
+  0%,
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-1px) scale(0.99);
+    opacity: 0.9;
+  }
+}
+
+/* 🚀 SHAKE EXTREMO PARA O CONTAINER TODO QUANDO EM FOCO */
+.calc-container:focus-within {
+  animation: containerPulse 2s ease-in-out infinite;
+}
+
+@keyframes containerPulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.005) rotate(0.1deg);
+  }
+}
+
+.calc-container:focus-within h2 {
+  font-size: 48px;
+  color: #00ff88;
+  transform: scale(1.15) rotate(2deg) translateY(-10px);
+  letter-spacing: 8px;
+  text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 15px #00ff88,
+    0 0 20px #00ff88, 0 0 30px #00ff88, 0 0 40px #00ff88, 5px 5px 0px #007bff,
+    10px 10px 0px #ff6b6b;
+  animation: pulseGlow 1.5s infinite alternate;
+}
+
+/* 🌟 ANIMAÇÃO PULSANTE DE BRILHO */
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 15px #00ff88,
+      5px 5px 0px #007bff;
+    transform: scale(1.15) rotate(2deg) translateY(-10px);
+  }
+  50% {
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88,
+      0 0 40px #00ff88, 0 0 50px #00ff88, 8px 8px 0px #007bff,
+      15px 15px 0px #ff6b6b;
+    transform: scale(1.2) rotate(-1deg) translateY(-15px);
+  }
+  100% {
+    text-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88, 0 0 35px #00ff88,
+      0 0 45px #00ff88, 10px 10px 0px #007bff, 20px 20px 0px #ff6b6b;
+    transform: scale(1.25) rotate(3deg) translateY(-20px);
+  }
+}
+
+/* 🔥 EFEITO EXTRA: BACKGROUND ANIMADO ATRÁS DO TEXTO */
+.calc-container:focus-within h2::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(0, 255, 136, 0.1),
+    transparent,
+    rgba(0, 123, 255, 0.1),
+    transparent
+  );
+  border-radius: 50px;
+  z-index: -1;
+  animation: backgroundPulse 2s infinite;
+}
+
+@keyframes backgroundPulse {
+  0%,
+  100% {
+    background: linear-gradient(
+      45deg,
+      transparent,
+      rgba(0, 255, 136, 0.1),
+      transparent
+    );
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    background: linear-gradient(
+      45deg,
+      rgba(0, 255, 136, 0.2),
+      rgba(0, 123, 255, 0.2),
+      rgba(255, 107, 107, 0.2)
+    );
+    transform: rotate(180deg) scale(1.1);
+  }
+}
+
+/* 💫 EFEITO ADICIONAL: TREMOR NAS LETRAS */
+.calc-container:focus-within h2 {
+  animation: pulseGlow 1.5s infinite alternate, letterShake 0.1s infinite;
+}
+
+@keyframes letterShake {
+  0%,
+  100% {
+    transform: scale(1.15) rotate(2deg) translateY(-10px) translateX(0);
+  }
+  25% {
+    transform: scale(1.15) rotate(2deg) translateY(-10px) translateX(-1px);
+  }
+  75% {
+    transform: scale(1.15) rotate(2deg) translateY(-10px) translateX(1px);
+  }
 }

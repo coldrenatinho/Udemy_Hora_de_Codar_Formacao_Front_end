@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/javascrip.js" defer></script>
-</head>
-<body>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-container">
+        <h2>Calculadora IMC</h2>
+        <div class="form-container">
+          <form action="" class="imc-form">
+            <div class="form-container">
+              <input
+                class="form__input"
+                type="number"
+                name="height"
+                id="height"
+                placeholder=" "
+              />
+              <label for="height" class="form__label">Altura: </label>
+            </div>
+            <div class="form-container">
+              <input
+                class="form__input"
+                type="number"
+                name="weight"
+                id="weight"
+                placeholder=" "
+              />
+              <label for="weight" class="form__label">Peso: </label>
+            </div>
+            <div class="action-control">
+              <button id="calc-btn">Calcular</button>
+              <button id="reset-btn">Limpar</button>
+            </div>
+          </form>
+          <div id="result-container" class="hidden">
+            <h3>Resultado</h3>
+            <p class="imc-number">Seu IMC <span></span></p>
+            <p class="imc-info">Situação Atual <span></span></p>
+            <h3>Configurar a classificaçao</h3>
+            <div class="imc-table">
+              <h4>IMC</h4>
+              <h4>Classificação</h4>
+              <h4>Obesidade</h4>
+            </div>
+          </div>
+          <button id="voltar">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
