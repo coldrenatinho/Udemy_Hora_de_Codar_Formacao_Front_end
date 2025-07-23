@@ -74,6 +74,45 @@ body {
   overflow: hidden;
 }
 
+button {
+  position: relative;
+  padding: 20px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.action-control {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
 /* 🎭 ANIMAÇÃO DO CONTAINER */
 @keyframes containerGradient {
   0%,
@@ -124,7 +163,8 @@ body {
 
 /* 🔥 GRADIENTE REATIVO QUANDO EM FOCO */
 .calc-container:focus-within .container::before {
-  animation: overlayFlow 1s ease-in-out infinite, focusIntensify 2s ease infinite;
+  animation: overlayFlow 1s ease-in-out infinite,
+    focusIntensify 2s ease infinite;
 }
 
 @keyframes focusIntensify {
